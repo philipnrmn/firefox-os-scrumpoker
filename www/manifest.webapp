@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "name": "Scrum Poker",
+  "description": "Scrum Poker for Firefox OS",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/img/icons/scrumpoker-16.png",
+    "48": "/img/icons/scrumpoker-48.png",
+    "128": "/img/icons/scrumpoker-128.png"
+  },
+  "orientation": ["portrait"],
+  "developer": {
+    "name": "Philip Norman",
+    "url": "https://github.com/philipnrmn/"
+  },
+  "installs_allowed_from": ["*"],
+  "default_locale": "en"
+}
