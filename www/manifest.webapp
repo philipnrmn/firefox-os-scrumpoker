@@ -1,7 +1,7 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": "Scrum Poker",
-  "description": "Scrum Poker for Firefox OS",
+  "description": "Scrum Poker is an estimation technique commonly used in the Agile software development methodology. This handy app allows you to pick and display story sizes from zero to infinity (or signal that your caffeine levels are dangerously low) without having to carry a pack of cards.",
   "launch_path": "/index.html",
   "icons": {
     "16": "/img/icons/scrumpoker-16.png",
