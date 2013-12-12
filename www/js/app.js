@@ -20,11 +20,25 @@ define(['zepto'], function(require) {
     }
     
     $('ol').removeClass('hidden');
+
+    var backside = $('.card-backside')
+    var bigCard;
     
-    $('.card').click(function() {
+    $('ol .card').click(function() {
         $('ol').hide().addClass('hidden');
         
-        var bigCard = $(this).clone();
+        bigCard = $(this).clone();
+        backside.attr('class', 'card card-backside big-card hidden');
+
+        setTimeout(function() {
+            backside.attr('class', 'card card-backside big-card');
+        }, 50);
+
+    });
+
+    backside.click(function() {
+
+        backside.attr('class', 'card card-backside big-card hidden');
         
         bigCard
             // addClass/removeClass doesn't work on SVG elements
@@ -37,8 +51,10 @@ define(['zepto'], function(require) {
             .appendTo('.wrapper');
             
         setTimeout(function() {
+            backside.attr('class', 'card card-backside big-card hidden disabled');
             bigCard.attr('class', 'card big-card');
         }, 50);
+
     });
 
 });
